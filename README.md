@@ -36,7 +36,9 @@ Reproduire le dessin suivant dans le navigateur à l’aide des outils que vous 
 
 > :exclamation: La grille est à titre indicatif et elle ne doit pas être dessinée.
 
-![dessin](dessin.png)
+![dessin](img/dessin-svg.png)
+
+
 
 ## Exercice 2 - Les arbres du canton de Vaud (15 points)
 Vous avez à disposition les données Openstreetmap des arbres du canton de Vaud.  
@@ -61,28 +63,26 @@ Avec les donnés de l'exercice précédent, produisez les visualisations suivant
 ### 3.1 Carte choroplète (25 points)
 
 
-1. Visualisez une carte choroplète des communes selon le **n_trees** par km² :dart: **10 points** :dart:
+1. Visualisez une carte choroplète des communes selon le **nombre d'arbres par km²** :dart: **10 points** :dart:
 
 2. Rajoutez une info-bulle quand vous survolez sur les communes avec les informations suivante : **nom de la commune** et **nombre d'arbres par km²** :dart: **10 points** :dart:
   
 3. Quel est votre avis par rapport à ce genre de visualisation ? Il y a t'il des biais ? Quel type de réprésentation serait la plus adaptée ? Imprimez la réponse dans la console. :dart: **5 points** :dart:
 
-
-
-### 3.2 Carte à bulle (25 points)
+### 3.2 Carte à bulles (25 points)
 
 Nous allons reproduire une carte à bulles (bubble map), comme ci-dessous :
 
 ![bubble map](img/bubble_map.png)
 
-Pour ce faire, vous disposez d'un deuxième jeu de données (data/centroids_vd.geojson) qui contient les coordonnées des centres des communes (en latitude et longitude) du canton de Vaud, avec les informations suivantes :
+Pour ce faire, vous disposez d'un deuxième jeu de données (*data/centroids_vd.geojson*) qui contient les coordonnées des centres des communes (en latitude et longitude). S'agissant d'un fichier `geojson`, la composante géographique est directement dans les données. Les données sont structurées de la manière suivante :
 
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Lausanne_)
 
 Veuillez suivre les instructions suivantes :
 
-1. Construisez une carte comme dans l'image ci-dessus, en utilisant le nombre d'arbres par km² comme rayon, avec une échelle adaptée :dart: 10 points :dart:
+1. Construisez une carte comme dans l'image ci-dessus, en utilisant le nombre d'arbres par km² comme rayon des cercles, avec une échelle adaptée :dart: **10 points** :dart:
 
 2. Rajoutez une info-bulle si on survole avec la souris :dart: **10 points** :dart:
 
