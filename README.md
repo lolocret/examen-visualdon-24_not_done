@@ -36,7 +36,7 @@ Reproduire le dessin suivant dans le navigateur à l’aide des outils que vous 
 
 > :exclamation: La grille est à titre indicatif et elle ne doit pas être dessinée.
 
-![dessin](img/dessin-svg.png)
+![dessin](assets/img/dessin-svg.png)
 
 
 
@@ -73,9 +73,9 @@ Avec les donnés de l'exercice précédent, produisez les visualisations suivant
 
 Nous allons reproduire une carte à bulles (bubble map), comme ci-dessous :
 
-![bubble map](img/bubble_map.png)
+![bubble map](assets/img/bubble_map.png)
 
-Pour ce faire, vous disposez d'un deuxième jeu de données (*data/centroids_vd.geojson*) qui contient les coordonnées des centres des communes (en latitude et longitude). S'agissant d'un fichier `geojson`, la composante géographique est directement dans les données. Les données sont structurées de la manière suivante :
+Pour ce faire, vous disposez d'un deuxième jeu de données (*assets/img/centroids_vd.geojson*) qui contient les coordonnées des centres des communes (en latitude et longitude). S'agissant d'un fichier `geojson`, la composante géographique est directement dans les données. Les données sont structurées de la manière suivante :
 
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Lausanne_)
