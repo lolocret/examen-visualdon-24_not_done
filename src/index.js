@@ -1,6 +1,5 @@
 import * as d3 from "d3";
 
-
 /*
 ========================================================================================================================
 1. Dessin SVG (15 points)
@@ -8,18 +7,17 @@ import * as d3 from "d3";
 Vous pouvez dessiner la figure soit à partir d'ici ou directement dans l'HTML (index.html).
 */
 
-const dataArbres = '../data/arbres_communes_vaud.geojson'
-const dataCentroides = '../data/centroids_vaud.geojson'
+const dataArbres = '../data/arbres_communes.json'
+const dataCentres = '../data/centres_communes.json'
 
 // Import des données
 Promise.all([
     d3.json(dataArbres),
-    d3.json(dataCentroides)
-]).then(([arbres, centroides]) => {
-
-        // Données
-        console.log('Données Communes', arbres)
-        console.log('Données Centroides', centroides)
+    d3.json(dataCentres)
+]).then(([arbresCommunes, centresCommunes]) => {
+     // Données
+     console.log('Contours géographiques (path) avec n_trees', arbresCommunes)
+     console.log('Centres géométriques (circle)', centresCommunes)
 
         /*
 ========================================================================================================================
@@ -27,14 +25,13 @@ Promise.all([
 ========================================================================================================================
         */
 
-        // --- 2.1 La commune ---
+        // 2.1 La commune ayant le plus d'arbres par km2---
 
 
-        // --- 2.2 La commune avec le pourcentage de non le plus elevé ---
+        // 2.2 Les 10 communes ayant le plus d'arbres par km2 ---
 
 
-        // --- 2.3 Le résultat de la votation sur l'ensemble du canton (moyenne pourcentage oui, moyenne pourcentage non dans tout le canton) ---
-
+        // 2.3 Est-ce qu’on peut faire confiance aux données extraites d’OpenStreetMap ? À quelle·s autre·s entité·s pourrait-on faire appel ? ---
 
 
         /*
@@ -43,29 +40,7 @@ Promise.all([
 ========================================================================================================================
         */
 
-        // Constantes
-        const margin = {top: 10, right: 40, bottom: 20, left: 40},
-            width = 0.8 * window.innerWidth - margin.left - margin.right,
-            height = 0.7 * window.innerHeight + margin.top + margin.bottom;
-
-
         // --- 3.1 Carte choroplète ---
-        const mapSvg = d3.select('#map')
-            .append('svg')
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-        const projection = d3.geoMercator()
-            .fitSize([width, height], {"type": "FeatureCollection", "features": arbres})
-
-        const path = d3.geoPath()
-            .projection(projection)
-
-
-
-        // ---------------------------- Continuez ci-dessous -----------------------------------
 
 
 
@@ -75,16 +50,22 @@ Promise.all([
 
 
 
-        // --- 3.2 Barchart ---
-        const barchartSvg = d3.select('#barchart')
-            .append('svg')
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // --- 3.2 Carte à bulles ---
+     
 
 
-        // ---------------------------- Continuez ci-dessous -----------------------------------
+
+
+
+
+
+
+
+
+
+
+        // --- 3.3 Barchart ---
 
 
 
