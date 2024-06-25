@@ -4,8 +4,10 @@ Le travail sera rendu au plus tard à 16h15, par e-mail à noemi.romano@heig-vd.
 
 Vous rendrez un **fichier ZIP** de tout votre projet excepté le dossier `node_modules` et vous donnerez votre nom de famille, prénom et classe à ce dossier (*nom_prenom_classe.zip*). Vous êtes responsable de son contenu et devez vous assurer de la bonne réception du dossier avant de quitter la salle.
 
+Pour accéder à la version en ligne de la donnée de l'examen, visitez https://github.com/romanoe/examen-visualdon-24/
+
 ## Installation
-* Clonez ou téléchargez le zip de ce [dossier](https://github.com/romanoe/examen-visualdon-24/) 
+* Clonez ou téléchargez le zip de ce [dossier]([https://github.com/romanoe/examen-visualdon-24/](https://github.com/romanoe/examen-visualdon-24/archive/refs/heads/main.zip)) 
 
 ### SSH
 ```
