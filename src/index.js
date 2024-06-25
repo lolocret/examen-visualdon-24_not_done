@@ -1,5 +1,11 @@
 import * as d3 from "d3";
 
+
+// Au cas où vous avez besoin de Leaflet
+import L from "leaflet";
+import 'leaflet/dist/leaflet.css';
+
+
 /*
 ========================================================================================================================
 1. Dessin SVG (15 points)
