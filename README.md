@@ -2,7 +2,7 @@
 
 Le travail sera rendu au plus tard à 16h15, par e-mail à noemi.romano@heig-vd.ch.
 
-Vous rendrez un **fichier ZIP** de tout votre projet excepté le dossier "node_modules" et vous donnerez votre nom de famille, prénom et classe à ce dossier (*nom_prenom_classe.zip*). Vous êtes responsable de son contenu et devez vous assurer de la bonne réception du dossier avant de quitter la salle.
+Vous rendrez un **fichier ZIP** de tout votre projet excepté le dossier `node_modules` et vous donnerez votre nom de famille, prénom et classe à ce dossier (*nom_prenom_classe.zip*). Vous êtes responsable de son contenu et devez vous assurer de la bonne réception du dossier avant de quitter la salle.
 
 ## Installation
 * Clonez la [repository](https://github.com/romanoe/examen-visualdon-24/) 
@@ -40,7 +40,7 @@ Reproduire le dessin suivant dans le navigateur à l’aide des outils que vous 
 
 
 
-## Exercice 2 - Les arbres du canton de Vaud :deciduous_tree: (15 points) 
+## Les arbres du canton de Vaud :deciduous_tree: 
 
 ### Données
 
@@ -52,7 +52,7 @@ Pour la suite des exercices, vous avez à disposition deux jeux de données:
 
 S'agissant de fichiers `geojson`, la composante géographique est directement dans les données (features). Les données sont structurées de la manière suivante :
 
-#### Propriétés `data/arbres_communes.geojson` 
+#### `data/arbres_communes.geojson` 
   
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Yverdon les bains_)
@@ -60,7 +60,7 @@ S'agissant de fichiers `geojson`, la composante géographique est directement da
 * `area_km2`: superficie de la commune en km²
 
 
-#### Propriétés `data/centres_communes.geojson`
+#### `data/centres_communes.geojson`
 
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Yverdon les bains_)
@@ -68,6 +68,8 @@ S'agissant de fichiers `geojson`, la composante géographique est directement da
 
 La clé commune entre les deux jeux de données est l'identitifiant (`id`). 
 
+
+## Exercice 2 - Manipulations des données (15 points)
 
 Apportez les manipulations suivantes et imprimez les résultats dans la console :
 
@@ -83,17 +85,17 @@ Avec les données de l'exercice précédent, utilisez les outils que vous avez a
 
 ### 3.1 Carte choroplète (25 points)
 
-> :bulb: Données: `data/arbres_communes.geojson` 
 
 1. Visualisez une carte choroplète de toutes les communes en fonction du **nombre d'arbres par km²** :dart: **10 points** :dart:
 
 2. Ajoutez une info-bulle qui affiche le **nom de la commune** et le **nombre d'arbres par km²** lorsque survolées. De plus, augmentez l'épaisseur du contour de la commune lors du survol. :dart: **10 points** :dart:
   
-3. Intégrez un titre et une légende à la carte. :dart: 5 points :dart:
+3. Intégrez un titre et une légende à la carte. :dart: **5 points** :dart:
+
+> :bulb: Données à utiliser: `data/arbres_communes.geojson` 
+
 
 ### 3.2 Carte à bulles (25 points)
-
-> :bulb: Données: `data/centres_communes.geojson`, `data/arbres_communes.geojson` 
 
 Nous allons reproduire une carte à bulles (bubble map), comme ci-dessous :
 
@@ -102,16 +104,21 @@ Nous allons reproduire une carte à bulles (bubble map), comme ci-dessous :
 
 Veuillez suivre les instructions suivantes :
 
-1. Construisez une carte comme dans l'image ci-dessus, en utilisant le nombre d'arbres par km² comme rayon des cercles, avec une échelle adaptée :dart: **10 points** :dart:
+1. Construisez une carte comme dans l'image ci-dessus, en utilisant le **nombre d'arbres par km²** comme rayon des cercles, avec une échelle adaptée :dart: **10 points** :dart:
 
 2. Rajoutez une info-bulle si on survole avec la souris :dart: **10 points** :dart:
 
 3. Créez une animation d'entrée pour les cercles (r=0 à r=**nombre d'arbres par km²**`) avec une fonction d'accélération de votre choix.  :dart: **5 points** :dart:
 
 
+> :bulb: Données à utiliser: `data/centres_communes.geojson` , `data/arbres_communes.geojson`
+
+
 ### 3.3 Diagramme en bâtons (20 points)
 
-1. Créez un diagramme en bâton horizontal (horizontal barchart) en ayant en axe Y les **noms des communes** et en axe X le **nombre d'arbres par km²**. (N'oubliez pas les axes !) :dart: **15 points** :dart:
+1. Créez un diagramme en bâton horizontal (horizontal barchart) des 10 communes ayant le plus d'arbres par km², avec en axe Y les **noms des communes** et en axe X le **nombre d'arbres par km²**  (N'oubliez pas les axes !) :dart: **15 points** :dart:
 
    
-2. Implémentez une animation d'entrée avec une transition de votre choix en utilisant D3. :dart: 5 points :dart:
+2. Implémentez une animation d'entrée avec une transition de votre choix en utilisant D3. :dart: **5 points** :dart:
+
+> :bulb: Données à utiliser: `data/arbres_communes.geojson` 
