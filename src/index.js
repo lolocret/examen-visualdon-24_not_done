@@ -13,8 +13,8 @@ import 'leaflet/dist/leaflet.css';
 Vous pouvez dessiner la figure soit à partir d'ici ou directement dans l'HTML (index.html).
 */
 
-const dataArbres = '../data/arbres_communes.json'
-const dataCentres = '../data/centres_communes.json'
+const dataArbres = '../data/arbres_communes.geojson'
+const dataCentres = '../data/centres_communes.geojson'
 
 // Import des données
 Promise.all([
