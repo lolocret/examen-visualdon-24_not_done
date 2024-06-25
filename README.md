@@ -71,8 +71,8 @@ La clé commune entre les deux jeux de données est l'identitifiant (`id`).
 
 Apportez les manipulations suivantes et imprimez les résultats dans la console :
 
-1. La **commune** ayant le plus grand nombre d'arbres par km² ainsi que le **nombre d'arbres par km2** :dart: **5 points** :dart:
-2. Les **10 communes** qui ont le plus grand nombre d'arbre par km², ainsi que leur **nombre d'arbres par km2** :dart: **5 points** :dart:
+1. La **commune** ayant le plus grand nombre d'arbres par km² ainsi que le **nombre d'arbres par km²** :dart: **5 points** :dart:
+2. Les **10 communes** qui ont le plus grand nombre d'arbre par km², ainsi que leur **nombre d'arbres par km²** :dart: **5 points** :dart:
 3. Peut-on considérer les données sur les arbres extraites d'OpenStreetMap comme fiables ? Quelles autres entités pourraient fournir des données alternatives ou complémentaires ? Imprimez la réponse dans la console. :dart: **5 points** :dart:
 
 
