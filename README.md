@@ -40,7 +40,7 @@ Reproduire le dessin suivant dans le navigateur à l’aide des outils que vous 
 
 
 
-## Exercice 2 - Les arbres du canton de Vaud (15 points)
+## Exercice 2 - Les arbres du canton de Vaud :deciduous_tree: (15 points) 
 
 ### Données
 
@@ -50,9 +50,9 @@ Pour la suite des exercices, vous avez à disposition deux jeux de données:
 2.  `data/centres_communes.geojson`: Les centres géométriques des communes 
 
 
-S'agissant de fichiers `geojson`, la composante géographique est directement dans les données. Les données sont structurées de la manière suivante :
+S'agissant de fichiers `geojson`, la composante géographique est directement dans les données (features). Les données sont structurées de la manière suivante :
 
-#### Structure `data/arbres_communes.geojson` 
+#### Propriétés `data/arbres_communes.geojson` 
   
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Yverdon les bains_)
@@ -60,13 +60,16 @@ S'agissant de fichiers `geojson`, la composante géographique est directement da
 * `area_km2`: superficie de la commune en km²
 
 
-#### Structure `data/centres_communes.geojson`
+#### Propriétés `data/centres_communes.geojson`
 
 * `id` : identifiant commune
 * `name`: nom de la commune (p. ex. _Yverdon les bains_)
 
 
-La clé commune entre les deux jeux de données sApportez les manipulations suivantes et imprimez les résultats dans la console :
+La clé commune entre les deux jeux de données est l'identitifiant (`id`). 
+
+
+Apportez les manipulations suivantes et imprimez les résultats dans la console :
 
 1. La **commune** ayant le plus grand nombre d'arbres par km² ainsi que le **nombre d'arbres par km2** :dart: **5 points** :dart:
 2. Les **10 communes** qui ont le plus grand nombre d'arbre par km², ainsi que leur **nombre d'arbres par km2** :dart: **5 points** :dart:
@@ -80,7 +83,7 @@ Avec les données de l'exercice précédent, utilisez les outils que vous avez a
 
 ### 3.1 Carte choroplète (25 points)
 
-> :bulb: Données à utiliser: `data/arbres_communes.geojson` 
+> :bulb: Données: `data/arbres_communes.geojson` 
 
 1. Visualisez une carte choroplète de toutes les communes en fonction du **nombre d'arbres par km²** :dart: **10 points** :dart:
 
@@ -90,7 +93,7 @@ Avec les données de l'exercice précédent, utilisez les outils que vous avez a
 
 ### 3.2 Carte à bulles (25 points)
 
-> :bulb: Données à utiliser pour les bulles: `data/centres_communes.geojson`. Pour les contours: `data/arbres_communes.geojson` 
+> :bulb: Données: `data/centres_communes.geojson`, `data/arbres_communes.geojson` 
 
 Nous allons reproduire une carte à bulles (bubble map), comme ci-dessous :
 
