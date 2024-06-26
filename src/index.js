@@ -5,6 +5,9 @@ import * as d3 from "d3";
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
 
+// Custom styles
+import "./style.css";
+
 
 /*
 ========================================================================================================================
