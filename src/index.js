@@ -46,7 +46,7 @@ Promise.all([
         // 2.2 Les 10 communes ayant le plus d'arbres par km2 ---
 
 
-        // 2.3 Est-ce qu’on peut faire confiance aux données extraites d’OpenStreetMap ? À quelle·s autre·s entité·s pourrait-on faire appel ? ---
+        // 2.3 Peut-on considérer les données sur les arbres extraites d'OpenStreetMap comme fiables ? Quelles autres entités pourraient fournir des données alternatives ou complémentaires ? ---
 
 
         /*
