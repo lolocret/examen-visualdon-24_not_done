@@ -16,12 +16,20 @@ Vous pouvez dessiner la figure soit à partir d'ici ou directement dans l'HTML (
 
 
 
-const dataArbres = await d3.json('../data/arbres_communes.geojson')
-const dataCentres = await d3.json('../data/centres_communes.geojson')
 
 
-console.log('Contours géographiques (path) avec n_trees', dataArbres)
-console.log('Centres géométriques (circle)', dataCentres)
+
+// Données
+const dataArbres = "../data/arbres_communes.geojson";
+const dataCentres = "../data/centres_communes.geojson";
+
+Promise.all([
+    d3.json(dataArbres),
+    d3.json(dataCentres)
+]).then(([arbresCommunes, centresCommunes]) => {
+     
+     console.log('Contours géographiques (path) avec n_trees', arbresCommunes)
+     console.log('Centres géométriques (circle)', centresCommunes)
 
         /*
 ========================================================================================================================
@@ -68,6 +76,7 @@ console.log('Centres géométriques (circle)', dataCentres)
 
 
 
+
         // --- 3.3 Barchart ---
 
 
@@ -79,3 +88,5 @@ console.log('Centres géométriques (circle)', dataCentres)
 
 
 
+
+    });
