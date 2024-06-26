@@ -1,11 +1,11 @@
 import * as d3 from "d3";
 
 
-// Au cas où vous avez besoin de Leaflet
+// Au cas où vous avez besoin de Leaflet pour les cartes
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
 
-// Custom styles
+// Si vous avez besoin de styles CSS spécifiques
 import "./style.css";
 
 
