@@ -33,7 +33,6 @@ Vous devriez avoir accès à votre serveur local sur [localhost:5173](http:local
 
 Complétez les fichiers `index.html` et `src/index.js` afin de réaliser les exercices demandés.
 
-\pagebreak
 
 
 ## Exercice 1 - SVG (15 points)
@@ -45,7 +44,6 @@ La grille et la légende sont fournies à titre indicatif et ne doivent pas êtr
 
 
 
-\pagebreak
 
 ## Les arbres du canton de Vaud
 
